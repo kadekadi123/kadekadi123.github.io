@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Website | Random University</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="img/logo1.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1><marquee behavior="alternate" scrollamount="3" width="270px" onmouseover="this.stop()" onmouseout="this.start()">Contact Us</marquee></h1>
+    </section>
+
+    <!-- Contact Us -->
+    <section class="location">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.745512332626!2d115.26491361531542!3d-8.620413089983339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23f1a67203f17%3A0x68b383666650e4c6!2sKamar%20dekadi!5e0!3m2!1sen!2sid!4v1623908163142!5m2!1sen!2sid"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </section>
+
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <i class="fa fa-home"></i>
+            <span>
+              <h5>Batubulan Kangin</h5>
+              <p>Gianyar, Bali, IDN</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-phone"></i>
+            <span>
+              <h5>+62 81234567890</h5>
+              <p>Monday to Saturday, 10 A.M to 5 P.M</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-envelope-o"></i>
+            <span>
+              <h5>dekadi16juli@gmail.com</h5>
+              <p>Email us your query</p>
+            </span>
+          </div>
+        </div>
+        <div class="contact-col">
+          <form action="form.php" method="POST">
+            <input type="text" name="name" placeholder="Enter Your Name" required />
+            <input type="email" name="email" placeholder="Enter Email Address" required />
+            <input type="text" name="subject" placeholder="Enter Your Subject" required />
+            <textarea rows="8" name="message" placeholder="Message" required></textarea>
+            <button type="submit" class="hero-btn red-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+        Adipisci itaque consequatur libero quia ex architecto tenetur facilis, veniam quam quae molestias provident non? Velit sapiente ea aut tenetur accusantium qui?
+      </p>
+      <div class="icons">
+        <a href="https://www.facebook.com/i.nugraha.7965" class="fa fa-facebook fa-lg"></a>
+        <a href="https://www.instagram.com/kadekadi16/" class="fa fa-instagram fa-lg"></a>
+        <a href="https://www.youtube.com/channel/UCrNnOqRH1ch_hvRuxTAce4g" class="fa fa-youtube-play fa-lg"></a>
+      </div>
+      <p>Made with<i class="fa fa-heart"></i>by Simple Website</p>
+      <p>I Kadek Adi Rian Nugraha</p>
+      <p>Thank's to Easy Tutorials</p>
+    </section>
+
+    <!-- JavaScript for Toggle Menu -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

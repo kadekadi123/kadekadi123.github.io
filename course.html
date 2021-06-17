@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Website | Random University</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="img/logo1.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1><marquee behavior="alternate" scrollamount="3" width="300px" onmouseover="this.stop()" onmouseout="this.start()">Our Courses</marquee></h1>
+    </section>
+
+    <!-- course -->
+    <section class="course">
+      <h1>Courses</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quidem hic, quos numquam fugiat cupiditate, deleniti dolore quia odio dolores,<br />
+        repellat ratione eveniet molestiae totam nostrum? Ipsum similique delectus repellat.
+      </p>
+      <div class="row">
+        <div class="course-col">
+          <h3>Intermediate</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis repellat provident cum ducimus, incidunt numquam deserunt officiis dicta magni sed, minus possimus quos autem blanditiis nesciunt, sint reiciendis amet asperiores?
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>Degree</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis repellat provident cum ducimus, incidunt numquam deserunt officiis dicta magni sed, minus possimus quos autem blanditiis nesciunt, sint reiciendis amet asperiores?
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>Post Graduation</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis repellat provident cum ducimus, incidunt numquam deserunt officiis dicta magni sed, minus possimus quos autem blanditiis nesciunt, sint reiciendis amet asperiores?
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- facilities -->
+
+    <section class="facilities">
+      <h1>Facilities</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br />
+        Voluptatibus nulla velit inventore blanditiis eaque maiores ipsum dolore non, praesentium ut provident fugiat corrupti quis atque quibusdam et harum sint repellendus.
+      </p>
+      <div class="row">
+        <div class="facilities-col">
+          <img src="img/library.png" />
+          <h3>Work Class Library</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi delectus voluptate cumque blanditiis numquam possimus nam architecto nobis modi veritatis fuga molestiae doloribus magnam ratione molestias pariatur excepturi.</p>
+        </div>
+        <div class="facilities-col">
+          <img src="img/basket.png" />
+          <h3>Largest Play Ground</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi delectus voluptate cumque blanditiis numquam possimus nam architecto nobis modi veritatis fuga molestiae doloribus magnam ratione molestias pariatur excepturi.</p>
+        </div>
+        <div class="facilities-col">
+          <img src="img/cafeteria.png" />
+          <h3>Tasty and Healthy Food</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi delectus voluptate cumque blanditiis numquam possimus nam architecto nobis modi veritatis fuga molestiae doloribus magnam ratione molestias pariatur excepturi.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+        Adipisci itaque consequatur libero quia ex architecto tenetur facilis, veniam quam quae molestias provident non? Velit sapiente ea aut tenetur accusantium qui?
+      </p>
+      <div class="icons">
+        <a href="https://www.facebook.com/i.nugraha.7965" class="fa fa-facebook fa-lg"></a>
+        <a href="https://www.instagram.com/kadekadi16/" class="fa fa-instagram fa-lg"></a>
+        <a href="https://www.youtube.com/channel/UCrNnOqRH1ch_hvRuxTAce4g" class="fa fa-youtube-play fa-lg"></a>
+      </div>
+      <p>Made with<i class="fa fa-heart"></i>by Simple Website</p>
+      <p>I Kadek Adi Rian Nugraha</p>
+      <p>Thank's to Easy Tutorials</p>
+    </section>
+
+    <!-- JavaScript for Toggle Menu -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
